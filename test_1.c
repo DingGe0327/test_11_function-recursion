@@ -14,7 +14,7 @@ void print(unsigned int n)
 {
 	if (n > 9)
 	{
-		printf(n / 10);
+		print(n / 10);
 	}
 	printf("%d ", n % 10);
 }
