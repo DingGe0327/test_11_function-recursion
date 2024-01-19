@@ -1,16 +1,16 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
-//写一个递归函数，输入一组非负整数，返回它们的和
+//鍐欎竴涓�掑綊鍑芥暟锛岃緭鍏ヤ竴缁勯潪璐熸暣鏁帮紝杩斿洖瀹冧滑鐨勫拰
 #include <stdio.h>
 int Bigsum(int n)
 {
-	if (n > 9)
-	{
-		return Bigsum(n / 10) + n % 10;
-	}
-	else
-	{
-		return n;
-	}
+    if (n > 9)
+    {
+        return Bigsum(n / 10) + n % 10;
+    }
+    else
+    {
+	return n;
+    }
 }
 int main()
 {
